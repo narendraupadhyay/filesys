@@ -93,9 +93,11 @@ public class NumberWords {
 	                }
 	            }
 
-	            else if(l_count == 1 || (mynum >0 && mynum <20)) {
-	                if(div > 0)
-	                answer +=" "+num[div - 1];
+	            else if(l_count == 1 || (mynum >0 && mynum <=20)) {
+	               if(mynum >  0) {
+	            	   answer +=" "+num[mynum - 1];
+	            	   multiplier = 0;
+	               }
 	            }
 	            mynum = remainder;
 	            multiplier /= 10;
